@@ -1,0 +1,51 @@
+.titulo-admin{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: initial;
+    align-items:flex-start;
+    margin: 15px;
+    gap: 10px;
+}
+
+
+.boton-admin{
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 12px;
+    background-color: rgb(133, 133, 245);
+}
+
+.boton-admin-2{
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 12px;
+    background-color: rgb(133, 133, 245);
+}
+
+.boton-agregar-producto{
+    margin-top: 0px;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 12px;
+    background-color: rgb(133, 133, 245);
+}
+
+@media (min-width:374px) and (max-width: 991px){
+    .formulario{
+        flex-direction: column;
+        align-items: center;
+    }
+    .boton-admin-2{
+        margin: 5px;
+        padding: 3px 8px;
+        border-radius: 8px;
+        font-size: 15px; 
+    }
+}

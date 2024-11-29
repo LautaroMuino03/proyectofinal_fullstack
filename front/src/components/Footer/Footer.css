@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  #footer {
+    background-color: #1D3557;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer {
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  
+  #footer .nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  #footer .nav-link:hover {
+    color: #F4A261;
+  }
+  
+  #footer .text-center {
+    color: white;
+  }
+
+  .text-center{
+    position: relative;
+    bottom: 10px;
+  }
+  
+  @media(min-width:374px) and (max-width:991px) {
+    .text-center {
+      position: relative;
+      bottom: 15px;
+    }
+  }
+  

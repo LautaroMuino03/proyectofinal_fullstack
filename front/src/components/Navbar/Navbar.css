@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+.encabezado{
+    background-color: #1D3557
+}
+
+.hamburguer{
+    background-color: #E0E0E0;
+}
+
+.btn{
+    height: 37px;
+}
+
+.iniciar-sesion{
+    display: flex;
+    position: relative;
+}
+
+.imagen{
+    height: 63px;
+    width: auto;
+position: absolute;
+right: 15px;
+}
+
+.carro{
+height: 40px;
+width: auto;
+position: absolute;
+right: 92px;
+bottom: 20px;
+cursor: pointer;
+}
+
+
+
+#input{
+width: 300px;
+}
+
+.titulo{
+color: white;
+font-family: "Oswald", sans-serif;
+font-optical-sizing: auto;
+font-weight: weight;
+font-style: normal;
+}
+
+.link-menu{
+    text-decoration: none;
+    color: black;
+}
+
+.cart-counter{
+    position: absolute;
+    right: 100px;
+    bottom: 10px;
+    font-size: 1rem;
+    color: white;
+}
+
+.boton-iniciar-sesion{
+    background-color: #F1FAEE;
+    color: #1D3557;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.boton-iniciar-sesion:hover{
+    background-color: #A8DADC;
+}
+
+@media(min-width:374px) and (max-width: 991px){       
+    .titulo{
+        display: none;
+    } 
+    .imagen{
+        height: 50px;
+    }
+    .carro{
+        height: 40px;
+        bottom: 10px;
+    }
+    .cart-counter{
+        font-size: 1rem;
+        bottom: 0px;
+    }
+}
+
+
+
+@media (min-width: 992px){
+    .titulo{
+        font-size: 2rem;
+    }
+    .carro{
+        position: absolute;
+        top: 22px;
+    }
+    .cart-counter{
+        position: absolute;
+        right: 100px;
+        bottom: 0px;
+        font-size: 1rem;
+        color: white;
+    }
+    .imagen{
+        position: absolute;
+        bottom: 3px;
+        height: 50px;
+    }
+   
+}

@@ -1,0 +1,46 @@
+
+.carta {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: black 0px 0px 10px;
+  overflow: hidden;
+  margin: 10px; 
+  width: 100%;
+  max-width: 250px; 
+  box-sizing: border-box; 
+}
+
+
+.padre-cartas {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  align-items: flex-start; 
+  margin: 5%;
+}
+
+
+.carta:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.informacion {
+  margin: 5px;
+  padding: 5px;
+}
+
+@media (min-width:374px) and (max-width: 991px){
+  .titulo-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 25px;
+  }
+}

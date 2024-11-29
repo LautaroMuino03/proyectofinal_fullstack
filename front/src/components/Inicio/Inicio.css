@@ -1,0 +1,68 @@
+body{
+    background-color: white
+}
+
+.img{
+    margin: 40px;
+    width: 50%;
+    margin-bottom: 10px;
+    box-shadow: black 0px 0px 10px;
+    overflow: hidden;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.h5{
+color: black;
+
+}
+
+.link{
+    text-decoration: none;
+}
+
+
+
+
+@media(min-width:374px) and (max-width: 991px){
+    .img{
+        width: 65%;
+        
+    }
+    .h5 {
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 15px;
+    }
+    .clase-inicio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        right: 15px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .img{
+        width: 40%;
+    }
+
+    .h5 {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+       
+        
+    }
+}
