@@ -11,3 +11,6 @@ const connectDB = async () => {
 };
 
 module.exports = connectDB;
+
+
+/*  mongodb://localhost:27017/base_productos */ //conexion local
