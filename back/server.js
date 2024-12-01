@@ -63,10 +63,9 @@ app.use('/api/productos', productoroutes);
 // Configuración de las rutas para archivos estáticos
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-app.get('/', (req, res) => {
-    res.status(200).json({ message: 'Servidor funcionando correctamente' });
-  });
-  
+
+// Configuración de express-session
+app.use(session)
 
 // Configuración del puerto
 const PORT = process.env.PORT || 5000;
