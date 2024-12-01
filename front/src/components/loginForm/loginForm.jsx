@@ -19,7 +19,7 @@ const LoginForm = () => {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({ email, password }),
-                credentials: 'include' // Si necesitas enviar cookies
+                credentials: 'include' 
             });
 
             console.log('Respuesta del servidor (raw):', response);
@@ -27,7 +27,7 @@ const LoginForm = () => {
             const data = await response.json();
             console.log('Datos recibidos del servidor (JSON):', data);
 
-            // Modificación: Guarda el estado de autenticación y redirige al panel de administración si el inicio de sesión es exitoso
+            //  Guarda el estado de autenticación y redirige al panel de administración si el inicio de sesión es exitoso
             if (response.ok && data.message === 'Inicio de sesión exitoso') {
                 localStorage.setItem('isAuthenticated', 'true'); // Guarda el estado de autenticación
                 alert('Inicio de sesión exitoso');

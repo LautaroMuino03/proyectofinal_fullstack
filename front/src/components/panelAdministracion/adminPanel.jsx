@@ -20,6 +20,7 @@ const AdminPanel = () => {
 
   const manejarAgregarProducto = async () => {
     try {
+      // Agregar el producto a la base de datos
       const respuesta = await axios.post('http://localhost:3001/api/productos', nuevoProducto);
       console.log('Producto agregado:', respuesta.data);
       setNuevoProducto({ title: '', category: '', price: 0, originalPrice: 0, desc: '' });

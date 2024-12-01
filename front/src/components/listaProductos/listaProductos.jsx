@@ -9,13 +9,13 @@ const useProductos = (category) => {
     const fetchProductos = async () => {
       setLoading(true);
       try {
-        // Asegúrate de que la URL de la API esté configurada correctamente
+        
         const url = category
-          ? `http://localhost:3001/api/productos?category=${category}` // Ajusta aquí según sea necesario
+          ? `http://localhost:3001/api/productos?category=${category}` // filtra por categoria
           : 'http://localhost:3001/api/productos';
         
         const response = await axios.get(url);
-        console.log("Productos obtenidos:", response.data); // <-- Verifica los datos recibidos
+        console.log("Productos obtenidos:", response.data); // Muestra los productos en consola
         setProductos(response.data);
       } catch (error) {
         console.error('Error al obtener los productos:', error);
