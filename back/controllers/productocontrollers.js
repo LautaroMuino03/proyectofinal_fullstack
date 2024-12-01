@@ -20,7 +20,7 @@ const obtenerProductosPorCategoria = async (req, res) => {
     const { category } = req.params;
     console.log("Categoría recibida:", category);  // Esto debería imprimir "celulares"
     try {
-        // Aquí usamos el regex para hacer que la búsqueda sea insensible a mayúsculas/minúsculas
+        // Aca usamos el regex para hacer que la búsqueda sea insensible a mayúsculas/minúsculas
         const productos = await producto.find({ category: { $regex: new RegExp(`^${category}$`, 'i') } });
         console.log("Productos encontrados:", productos);  // Esto mostrará los productos encontrados
         res.json(productos);
