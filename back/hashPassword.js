@@ -1,10 +1,10 @@
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
-const User = require('./models/user'); // Asegúrate de que la ruta sea correcta
+const User = require('./models/user'); 
 
 const hashAndUpdatePassword = async () => {
-    const email = "Lautaromuino2003@gmail.com"; // Tu email del usuario admin
-    const plainPassword = "Lautaromuiño"; // Tu contraseña actual en texto plano
+    const email = "Lautaromuino2003@gmail.com"; // usuario admin
+    const plainPassword = "Lautaromuiño"; // contraseña admin
 
     try {
         // Conecta a la base de datos
@@ -19,8 +19,8 @@ const hashAndUpdatePassword = async () => {
         // Actualiza la contraseña en la base de datos
         const result = await User.findOneAndUpdate(
             { email }, // Encuentra el usuario por email
-            { password: hashedPassword }, // Actualiza el campo password
-            { new: true } // Devuelve el documento actualizado
+            { password: hashedPassword }, // Actualiza el password
+            { new: true } // devuelve el documento actualizado
         );
 
         if (result) {

@@ -3,9 +3,9 @@ const { getProductos, agregarProducto, eliminarProducto, getProductoId, obtenerP
 const router = express.Router();
 const upload = require('../uploads/uploads.js');
 
-// Suponiendo que tienes algo como un servidor Express
 
-router.get('/categoria/:category', obtenerProductosPorCategoria); // Esta debe estar antes de /:productoId
+
+router.get('/categoria/:category', obtenerProductosPorCategoria); 
 router.get('/', getProductos);
 router.get('/:productoId', getProductoId);
 router.post('/', agregarProducto);

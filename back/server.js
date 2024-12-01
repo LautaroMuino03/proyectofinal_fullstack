@@ -41,7 +41,7 @@ const corsOptions = {
 
 // Agregar middleware CORS
 app.use(cors(corsOptions));
-app.options('*', cors(corsOptions));
+app.options('*', cors(corsOptions)); // maneja las solicitudes OPTIONS
 
 app.use((req, res, next) => {
     if (req.method === 'OPTIONS') {
