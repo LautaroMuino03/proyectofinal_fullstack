@@ -21,8 +21,8 @@ app.use(morgan('dev'));  // Muestra las peticiones en la consola
 
 
 
+const origenesPermitidos = ['http://localhost:10000'];
 
-const origenesPermitidos = ['http://localhost:5173']; 
 
 const corsOptions = {
     origin: (origin, callback) => {
