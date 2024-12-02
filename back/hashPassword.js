@@ -1,14 +1,14 @@
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
-const User = require('./models/user'); 
+const User = require('./models/user');
 
 const hashAndUpdatePassword = async () => {
     const email = "Lautaromuino2003@gmail.com"; // usuario admin
     const plainPassword = "Lautaromuiño"; // contraseña admin
 
     try {
-        // Conecta a la base de datos
-        await mongoose.connect('mongodb+srv://lautaromuino2003:Ligadewilde2003@proyectofullstack.slsbp.mongodb.net/base_productos?retryWrites=true&w=majority&appName=proyectofullstack',)
+        // Conecta a la base de datos usando MONGO_URI
+        await mongoose.connect(process.env.MONGO_URI); 
 
         console.log('Conectado a la base de datos...');
 
@@ -37,3 +37,4 @@ const hashAndUpdatePassword = async () => {
 };
 
 hashAndUpdatePassword();
+
