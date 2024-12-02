@@ -2,6 +2,8 @@ const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 const User = require('./models/user');
 
+require('dotenv').config();
+
 const hashAndUpdatePassword = async () => {
     const email = "Lautaromuino2003@gmail.com"; // usuario admin
     const plainPassword = "Lautaromuiño"; // contraseña admin

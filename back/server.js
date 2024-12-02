@@ -3,7 +3,6 @@ const connectDB = require('./config/db.js');
 const cors = require('cors');
 const morgan = require('morgan');
 const path = require('path');
-const session = require('express-session'); // Importar express-session
 const authroutes = require('./routes/authroutes.js');
 const productoroutes = require('./routes/productoroutes.js');
 
@@ -64,8 +63,6 @@ app.use('/api/productos', productoroutes);
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 
-// Configuración de express-session
-app.use(session)
 
 // Configuración del puerto
 const PORT = process.env.PORT || 3001;
