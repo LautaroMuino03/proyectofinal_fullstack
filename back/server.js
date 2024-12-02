@@ -53,6 +53,8 @@ app.use((req, res, next) => {
 
 
 
+
+
 // rutas de autenticación
 app.use('/api/auth', authroutes);
 
@@ -61,6 +63,11 @@ app.use('/api/productos', productoroutes);
 
 // Configuración de las rutas para archivos estáticos
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
+app.get('/', (req, res) => {
+    res.send('Backend funcionando correctamente');
+});
+
 
 
 
