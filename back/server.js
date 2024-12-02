@@ -20,7 +20,7 @@ app.use(morgan('dev'));  // Muestra las peticiones en la consola
 
 
 
-const origenesPermitidos = ['http://localhost:10000'];
+const origenesPermitidos = ['http://localhost:10000', 'https://proyectofinal-fullstack-1.onrender.com'];
 
 
 const corsOptions = {
