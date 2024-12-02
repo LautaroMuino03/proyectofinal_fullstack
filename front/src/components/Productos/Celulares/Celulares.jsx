@@ -29,7 +29,7 @@ function Celulares() {
       <div className='padre-cartas'>
         {celulares.map((celular) => (
           <Card key={celular._id} className='carta' style={{ width: '18rem', marginBottom: '1rem' }}>
-            <Card.Img variant="top" src={`https://proyectofinal-fullstack-1.onrender.com${celular.img}`} alt={celular.title} />
+            <Card.Img variant="top" src={`http://localhost:3001${celular.img}`} alt={celular.title} />
             <Card.Body>
               <Card.Title className='titulo-card'>{celular.title}</Card.Title>
               <Card.Text>
