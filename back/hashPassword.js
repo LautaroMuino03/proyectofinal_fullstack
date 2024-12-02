@@ -8,7 +8,7 @@ const hashAndUpdatePassword = async () => {
 
     try {
         // Conecta a la base de datos
-        await mongoose.connect('mongodb://localhost:27017/base_productos',)
+        await mongoose.connect('mongodb+srv://lautaromuino2003:Ligadewilde2003@proyectofullstack.slsbp.mongodb.net/base_productos?retryWrites=true&w=majority&appName=proyectofullstack',)
 
         console.log('Conectado a la base de datos...');
 
