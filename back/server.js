@@ -65,7 +65,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 
 // Configuración del puerto
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 5000;
 // Iniciar el servidor
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en puerto ${PORT}`);
