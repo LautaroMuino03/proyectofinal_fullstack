@@ -11,8 +11,8 @@ const useProductos = (category) => {
       try {
         
         const url = category
-          ? `http://localhost:3001/api/productos?category=${category}` // filtra por categoria
-          : 'http://localhost:3001/api/productos';
+          ? `https://proyectofinal-fullstack-1.onrender.com/api/productos?category=${category}` // filtra por categoria
+          : 'https://proyectofinal-fullstack-1.onrender.com/api/productos';
         
         const response = await axios.get(url);
         console.log("Productos obtenidos:", response.data); // Muestra los productos en consola
